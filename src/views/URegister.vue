@@ -2,7 +2,7 @@
 </script>
 <template>
 
-<section>
+<section >
 <fieldset class="fieldsetReg">
     <div class="Register">
     <form method="POST" action="vPage.html"> 

@@ -10,13 +10,13 @@ library.add(faBriefcase,faUser)
   <h5 class="GetStartHead">choose account type to get started</h5>
     <div class="GetStartWrap">
       <router-link type="button" class="GetStartBtn" to="/VStartPage">
-        business <br>
-      <font-awesome-icon icon="fa-briefcase"/>
+        <font-awesome-icon icon="fa-briefcase"/>
+        business
       </router-link>
 
     <router-link type="button" class="GetStartBtn" to="/UStartPage">
-      customer<br>
       <font-awesome-icon icon="fa-user"/>
+      customer
       </router-link>
     </div>
 </template>

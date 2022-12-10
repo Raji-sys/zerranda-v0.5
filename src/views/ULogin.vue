@@ -22,7 +22,7 @@ library.add(faHome)
         <div class="mb-4">
         <input type="password" name="password" placeholder="Password..." class="p-2">
     </div>
-        <router-link class="LoginBtn" to="/Upage"><font-awesome-icon icon="fa-solid fa-home"/></router-link>
+        <router-link class="LoginBtn " to="/Upage"><font-awesome-icon icon="fa-solid fa-home"/></router-link>
     </form>
 </div>
 </fieldset>

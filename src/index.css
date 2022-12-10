@@ -6,9 +6,9 @@
     body {
         cursor: pointer;
         /* background:linear-gradient(-270deg, #07423c, #253831, #074232); */
-        /* background: linear-gradient(-270deg, #07423c, #478fa5, #074232); */
-        /* background:linear-gradient(-270deg,#478fa5, #07423c, #478fa5); */
-        font-family: sans-serif;
+        /* background: linear-gradient(-270deg, #07423c, #07423c, #074232); */
+        /* background:linear-gradient(-270deg,#07423c, #07423c, #07423c); */
+        /* font-family: sans-serif; */
     }
     a {
         color: darkslategray;
@@ -17,6 +17,7 @@
     
     a:hover {
         color: mintcream;
+        
     }
 
 }
@@ -57,18 +58,27 @@
     @apply text-sm mt-0 text-zinc-900
 }
 
-.SloganTxt {
+.SloganTxt1 {
     font-family: cursive;
     color:#07423c;
     border-color: #1c5c6f;
     @apply font-semibold border-solid rounded-md 
 }
+.SloganTxt {
+    font-family: cursive;
+    color:mintcream;
+    border-color: #1c5c6f;
+    @apply font-semibold border-solid rounded-md 
+}
 
 .btn-co {
-    color:#07423c;
     font-size: 1.1rem;
     /* padding: 0.3em; */
     font-family: sans-serif;
+    color:#1c5c6f;
+    /* background:linear-gradient(-45deg,#edf2f7, #021f2a, #edf2f7); */
+
+    /* color:linear-gradient(-45deg,#edf2f7, #021f2a, #edf2f7); */
 }
 
 .btn-co:hover {
@@ -77,24 +87,27 @@
 
 .cardSty {
     /* background:linear-gradient(-270deg, #07423c, #253831, #074232); */
-    /* background: linear-gradient(-270deg, #07423c, #478fa5, #074232); */
-    background:linear-gradient(-45deg,#53c9f0fa, #021f2a, #53c9f0fa);
+    /* background: linear-gradient(-270deg, #c4d1cf,#1c5c6f, #1c5c6f, #ccd7d5); */
+    /* background: linear-gradient(-270deg, #1c5c6f,#07423c, #074232, #1c5c6f); */
+    /* background: linear-gradient(-270deg, #eaefee,#07423c, #074232,#074232, #f3f9f8); */
+    /* background:linear-gradient(-45deg,#53c9f0fa, #021f2a, #53c9f0fa); */
+    background:linear-gradient(-45deg,#edf2f7, #021f2a, #edf2f7);
 }
 .Showcase{
-    @apply text-gray-200 flex justify-center text-center shadow-slate-500 py-8 px-16
+    @apply text-gray-200 flex justify-center text-center shadow-slate-500 py-12 px-16
 }
 .ShowcaseMsg{
     @apply items-center text-gray-200
  } 
  .ShowcaseInfo{
-    @apply text-lg border-b-2 border-t-2 border-solid rounded-lg text-slate-50 p-2
+    @apply text-sm border-b-2 border-solid rounded-lg text-slate-50 p-2
  }
  .ShowcaseTitle{
     font-family: cursive;
-    @apply font-bold text-4xl p-6
+    @apply font-bold text-6xl p-6
  }
  .GetStartBtn{
-    @apply bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-6 border border-gray-400 rounded hover:shadow-lg btn-co mx-4 
+    @apply bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-6 border border-gray-400 rounded-lg hover:shadow-lg btn-co mx-4 
  }
  .GetStartHead{
   @apply text-lg mt-10
@@ -150,50 +163,55 @@
 } */
 
 .Vwrap{
-    @apply text-center flex justify-center gap-10 p-36 mt-7 cardSty
+    @apply text-center flex justify-center gap-10 p-36 mt-7;
+    background:linear-gradient(-45deg,#edf2f7, #021f2a, #edf2f7);
 }
 .LoginLink{
     padding: 5em;
-    border: 2px solid #478fa5;
+    border: 2px solid #07423c;
     border-radius: 1rem;
- @apply btn-co bg-white p-20   
+ @apply btn-co bg-white p-20    
 }
 
 .FieldsetMsg {
-    border-color: #478fa5;
+    border-color: #07423c;
     @apply text-center text-lg mt-0
 }
 
 .fieldsetLogin{
-    @apply flex justify-center text-center p-28 mt-4 cardSty
+    background:linear-gradient(-45deg,#edf2f7, #021f2a, #edf2f7);
+    @apply flex justify-center text-center p-28 mt-4 
 }
 .Login{
-    border: 2px solid #478fa5;
-    border-radius: 1rem;
-    @apply btn-co bg-white p-6
+    
+    border: 2px solid #07423c;
+    border-radius: 0.5rem;
+    @apply btn-co bg-white p-10 
 }
 input {
     color: #5a5854;
-    background-color: #f2f2f2;
-    border: 1px solid #478fa5;
+    background-color: white;
+    border: 1px solid #07423c;
     /* border-left-radius:1px ; */
     /* border-left-color: white; */
     border-radius: 3px;
+    @apply text-center
 }
 
 input:hover {
-    color: white;
     border: 1px solid #07423c;
     border-radius: 0.4rem;
 }
 
 input:focus {
     color: white;
-    background-color: #253831;
+    /* background-color: #253831; */
+    background-color: #07423c;
 }
 
 .bBtn{
-    background:linear-gradient(-45deg,#53c9f0fa, #021f2a, #53c9f0fa);
+    /* background:linear-gradient(-45deg,#edf2f7, #021f2a, #edf2f7); */
+    background-color: #1c5c6f;
     border-style: solid;
     color: white;
     border-radius: 0.4rem;
@@ -203,20 +221,21 @@ input:focus {
 .bBtn:hover{
     border-style: solid;
     border-radius: 0.4rem;
-    border-color: #478fa5;
-    @apply border-2
+    border-color: #07423c;
+    background-color: #1c5c6f;
 
 }
 .LoginBtn {
-    @apply bBtn px-24 p-2
+    @apply bBtn px-24 p-2  justify-center 
 }
 .fieldsetReg{
-    @apply  text-center flex justify-center p-4 cardSty
+    background:linear-gradient(-45deg,#edf2f7, #021f2a, #edf2f7);
+    @apply  text-center flex justify-center p-4 
 }
 .Register{
-    border: 2px solid #478fa5;
-    border-radius: 1rem;
-    @apply btn-co bg-white p-16 mt-0 mb-0
+    border: 2px solid #07423c;
+    border-radius: 0.5rem;
+    @apply btn-co bg-white p-14 mt-0 mb-0 w-1/2 
 }
 .section-title {
     text-align: center;
@@ -252,7 +271,7 @@ input:focus {
 .SearchbBtn:hover{
     border-style: solid;
     border-radius: 0.4rem;
-    border-color: #478fa5;
+    border-color: #07423c;
     @apply border-2
 
 }
@@ -270,15 +289,21 @@ input:focus {
 }
 textarea {
     color: #5a5854;
-    background-color: #f2f2f2;
-    border: 1px solid #478fa5;
-    /* border-left-radius:1px ; */
-    /* border-left-color: white; */
+    background-color: white;
+    border: 1px solid #07423c;
     border-radius: 3px;
+    @apply text-center
 }
 
 textarea:hover {
-    color: white;
     border: 1px solid #07423c;
     border-radius: 0.4rem;
+}
+textarea:focus {
+    color: #ffffff;
+    background: #07423c;
+}
+
+h2{
+color: #07423c ;
 }

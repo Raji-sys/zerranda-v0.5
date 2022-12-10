@@ -9,7 +9,8 @@ library.add(faExclamationCircle,faStar)
 </script>
 <template>
     <NavBar/>
-    <section class="p-5" id="terms">
+    <div class="border-b border-slate-200 mb-1"></div>
+    <section class="p-6" id="terms">
     <div class="section-title">
       <h2 class="text-center btn-co1 mt-5 text-gray-800 text-3xl font-semibold ">terms & features</h2>
     </div>

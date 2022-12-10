@@ -2,7 +2,7 @@
 import { library } from '@fortawesome/fontawesome-svg-core' 
 import { faHome } from '@fortawesome/free-solid-svg-icons'
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
-import { faDatabase} from '@fortawesome/free-solid-svg-icons';
+import { faDatabase} from '@fortawesome/free-solid-svg-icons'
 import { faFileCode } from '@fortawesome/free-solid-svg-icons'
 import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons'
 import { faContactCard } from '@fortawesome/free-solid-svg-icons'
@@ -11,45 +11,46 @@ library.add(faHome,faInfoCircle,faDatabase,faFileCode,faQuestionCircle,faContact
 </script>
 
 <template>
+<div class="border-t border-slate-200 mt-6"></div>
 <nav class="p-6 ">
 <div class="flex justify-center">
-  <div class="navUnder" id="menu">
+  <div class="" id="menu">
     <ul class="md:flex flex-wrap gap-10">
       
               <li class=" mx-3">
                  <router-link class="btn-co border-1 " to="/">
+                   <font-awesome-icon icon="fa-solid fa-home"/>
                    home
-                  <font-awesome-icon icon="fa-solid fa-home"/>
                   </router-link>
             </li>
               <li class=" mx-3">
                  <router-link class="btn-co border-1" to="/about">
+                   <font-awesome-icon icon="fa-solid fa-info-circle "/>
                    about
-                  <font-awesome-icon icon="fa-solid fa-info-circle "/>
                   </router-link>
             </li>
               <li class=" mx-3 ">
                 <router-link class="btn-co border-1" to="/Listings">
+                  <font-awesome-icon icon="fa-solid fa-database"/>
                   listings
-                <font-awesome-icon icon="fa-solid fa-database"/>
                 </router-link>
               </li>
               <li class= " mx-3">
                 <router-link class=" btn-co border-1" to="/terms">
-                  terms
                   <font-awesome-icon icon="fa fa-file-code "/>
+                  terms
                   </router-link>
               </li>
               <li class=" mx-3">
                  <router-link class=" btn-co border-1" to="/FAQs">
+                   <font-awesome-icon icon="fa fa-question-circle"/>
                    FAQs
-                  <font-awesome-icon icon="fa fa-question-circle"/>
                   </router-link>
             </li>
               <li class=" mx-3">
                 <router-link class="btn-co border-1" to="/contact">
-                  contact-us
                   <font-awesome-icon icon="fa fa-contact-card"/>
+                  contact-us
                   </router-link>
             </li>
           </ul>
@@ -57,4 +58,5 @@ library.add(faHome,faInfoCircle,faDatabase,faFileCode,faQuestionCircle,faContact
   </div>
 </div>
 </nav>
+<!-- <div class="border-b border-slate-200 mb-1"></div> -->
 </template>

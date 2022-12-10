@@ -17,7 +17,8 @@ library.add(faFacebook,faTwitter,faInstagram,faWhatsapp,faYoutube,faEnvelope,faM
 
 <template>
 <NavBar/>
-    <section id="contact" class="">    
+<div class="border-b border-slate-200 mb-1"></div>
+    <section id="contact" class="p-4">    
       <div class="section-title ">
         <h2 class="text-center btn-co1 mt-1 text-gray-800 text-3xl font-semibold ">contact us</h2>
       </div>
@@ -65,7 +66,7 @@ library.add(faFacebook,faTwitter,faInstagram,faWhatsapp,faYoutube,faEnvelope,faM
             <div class="">
               <textarea class="px-16 py-2 border mt-0" name="message" rows="5" placeholder="Message" required></textarea>
             </div>
-                    <router-link class="LoginBtn" to="/Vpage"><font-awesome-icon icon="fa-solid fa-envelope"/></router-link>
+                    <router-link class="LoginBtn flex justify-center " to="/Vpage"><font-awesome-icon icon="fa-solid fa-envelope"/></router-link>
           </form>
         </div>
 

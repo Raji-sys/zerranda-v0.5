@@ -12,7 +12,7 @@ const info2 = ref('join us as a business owner or professional to get intouch wi
     <div class="">
       <div class="ShowcaseMsg">
           <p class="ShowcaseTitle">zerranda</p>
-          <p class="ShowcaseInfo">{{info}}<br>{{info2}}</p>
+          <p class="ShowcaseInfo ">{{info}}<br>{{info2}}</p>
     </div>
 <GetStarted/>
 </div>

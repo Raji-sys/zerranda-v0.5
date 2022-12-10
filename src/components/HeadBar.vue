@@ -12,10 +12,10 @@ const title = ref ('your business listings in a minimalistic and fashionable way
        <img  :src=img>
      </div>
        </router-link>
-   <div class="Slogan ">
-     <span class="SloganTxt">{{title}}</span>
+   <div class="Slogan">
+     <span class="SloganTxt1">{{title}}</span>
    </div>
- </header> 
-
+ </header>
 </section>
+<!-- <div class="border-t border-slate-200 mt-6"></div> -->
 </template>
