@@ -1,8 +1,17 @@
 <script setup>
-// import HelloWorld from './components/HelloWorld.vue'
+import HeadBar from './components/HeadBar.vue'
 </script>
 
 <template>
-<h1 class="text-3xl font-bold underline"> Hello World</h1>
+    <HeadBar :title=title />
+    <router-view />
+<!-- <div class="container">
+</div> -->
 </template>
 
+<style>
+body{
+
+    /* background: #edf2f7 */
+}
+</style>

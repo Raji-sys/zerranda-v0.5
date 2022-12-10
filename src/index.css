@@ -1,3 +1,284 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    body {
+        cursor: pointer;
+        /* background:linear-gradient(-270deg, #07423c, #253831, #074232); */
+        /* background: linear-gradient(-270deg, #07423c, #478fa5, #074232); */
+        /* background:linear-gradient(-270deg,#478fa5, #07423c, #478fa5); */
+        font-family: sans-serif;
+    }
+    a {
+        color: darkslategray;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: mintcream;
+    }
+
+}
+
+.HeadSection{
+    @apply text-center p-2 
+}
+
+/* .nav-title {
+    text-align: center;
+}
+
+.nav-title {
+    text-align: center;
+}
+
+.nav-title span {
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.nav-title span::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 400px;
+    height: 3px;
+    background: darkslategray;
+    bottom: 0;
+    left: calc(50% - 200px);
+} */
+
+.imgDiv{
+    @apply flex items-center justify-center
+}
+
+.Slogan{
+    @apply text-sm mt-0 text-zinc-900
+}
+
+.SloganTxt {
+    font-family: cursive;
+    color:#07423c;
+    border-color: #1c5c6f;
+    @apply font-semibold border-solid rounded-md 
+}
+
+.btn-co {
+    color:#07423c;
+    font-size: 1.1rem;
+    /* padding: 0.3em; */
+    font-family: sans-serif;
+}
+
+.btn-co:hover {
+    color: #1c5c6f;
+}
+
+.cardSty {
+    /* background:linear-gradient(-270deg, #07423c, #253831, #074232); */
+    /* background: linear-gradient(-270deg, #07423c, #478fa5, #074232); */
+    background:linear-gradient(-45deg,#53c9f0fa, #021f2a, #53c9f0fa);
+}
+.Showcase{
+    @apply text-gray-200 flex justify-center text-center shadow-slate-500 py-8 px-16
+}
+.ShowcaseMsg{
+    @apply items-center text-gray-200
+ } 
+ .ShowcaseInfo{
+    @apply text-lg border-b-2 border-t-2 border-solid rounded-lg text-slate-50 p-2
+ }
+ .ShowcaseTitle{
+    font-family: cursive;
+    @apply font-bold text-4xl p-6
+ }
+ .GetStartBtn{
+    @apply bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-6 border border-gray-400 rounded hover:shadow-lg btn-co mx-4 
+ }
+ .GetStartHead{
+  @apply text-lg mt-10
+ }
+ .GetStartWrap{
+    @apply flex justify-center p-6
+ }
+ .FeaturedWrap{
+     @apply mt-8 grid md:grid-cols-3 gap-10 p-6 
+ }
+ /* .FeaturedCard{
+    @apply border rounded-lg
+ } */
+ .FullListBtn{
+    background:linear-gradient(-45deg,#53c9f0fa, #021f2a, #53c9f0fa);
+    @apply mt-2 mb-4 text-white font-semibold py-2 px-6 border border-gray-400 rounded hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50
+ }
+ .FeaturedSection{
+    @apply text-center p-3
+ }
+ .FullListWrap{
+    @apply flex justify-center mt-4
+ }
+ .TestimonialSection{
+    @apply text-center p-5
+ }
+ .TestimonialWrap{
+    @apply border-t-2 mb-4
+ } 
+ .TestimonialCard{
+     @apply md:flex 
+ } 
+ /* .TestimonialCardBody{
+    @apply flex-1 text-center px-5 py-5 m-2 rounded
+ }
+ .TestimonialCardBodyInner{
+    @apply flex items-center 
+ }
+ .TestimonialCardBodyImageWrap {
+    @apply lg:flex-shrink-0
+ }
+ .TestimonialImage {
+    @apply rounded-lg
+ }
+ .TestimonialMsg{
+  @apply text-lg
+} 
+.TestimonialMsgWrap{
+    @apply mt-4 ml-6
+}
+.TestimonialUsername{
+    @apply text-sm btn-co
+} */
+
+.Vwrap{
+    @apply text-center flex justify-center gap-10 p-36 mt-7 cardSty
+}
+.LoginLink{
+    padding: 5em;
+    border: 2px solid #478fa5;
+    border-radius: 1rem;
+ @apply btn-co bg-white p-20   
+}
+
+.FieldsetMsg {
+    border-color: #478fa5;
+    @apply text-center text-lg mt-0
+}
+
+.fieldsetLogin{
+    @apply flex justify-center text-center p-28 mt-4 cardSty
+}
+.Login{
+    border: 2px solid #478fa5;
+    border-radius: 1rem;
+    @apply btn-co bg-white p-6
+}
+input {
+    color: #5a5854;
+    background-color: #f2f2f2;
+    border: 1px solid #478fa5;
+    /* border-left-radius:1px ; */
+    /* border-left-color: white; */
+    border-radius: 3px;
+}
+
+input:hover {
+    color: white;
+    border: 1px solid #07423c;
+    border-radius: 0.4rem;
+}
+
+input:focus {
+    color: white;
+    background-color: #253831;
+}
+
+.bBtn{
+    background:linear-gradient(-45deg,#53c9f0fa, #021f2a, #53c9f0fa);
+    border-style: solid;
+    color: white;
+    border-radius: 0.4rem;
+    border-color: #07423c;
+}
+
+.bBtn:hover{
+    border-style: solid;
+    border-radius: 0.4rem;
+    border-color: #478fa5;
+    @apply border-2
+
+}
+.LoginBtn {
+    @apply bBtn px-24 p-2
+}
+.fieldsetReg{
+    @apply  text-center flex justify-center p-4 cardSty
+}
+.Register{
+    border: 2px solid #478fa5;
+    border-radius: 1rem;
+    @apply btn-co bg-white p-16 mt-0 mb-0
+}
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: darkslategray;
+    bottom: 0;
+    left: calc(50% - 40px);
+}
+.SearchBtn {
+    @apply bBtn p-4
+}
+.SearchbBtn{
+    background:linear-gradient(-45deg,#53c9f0fa, #021f2a, #53c9f0fa);
+    border-style: solid;
+    color: white;
+    border-radius: 3px;
+    border-color: #07423c;
+}
+
+.SearchbBtn:hover{
+    border-style: solid;
+    border-radius: 0.4rem;
+    border-color: #478fa5;
+    @apply border-2
+
+}
+.btn-co1 {
+    color:#07423c;
+    font-family: sans-serif;
+}
+
+.btn-co1:hover {
+    color: #1c5c6f;
+}
+.navUnder{
+    border-color: #1c5c6f;
+    @apply border-b-2 rounded-sm 
+}
+textarea {
+    color: #5a5854;
+    background-color: #f2f2f2;
+    border: 1px solid #478fa5;
+    /* border-left-radius:1px ; */
+    /* border-left-color: white; */
+    border-radius: 3px;
+}
+
+textarea:hover {
+    color: white;
+    border: 1px solid #07423c;
+    border-radius: 0.4rem;
+}
