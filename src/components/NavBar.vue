@@ -12,7 +12,7 @@ library.add(faHome,faInfoCircle,faDatabase,faFileCode,faQuestionCircle,faContact
 
 <template>
 <div class="border-t border-slate-200 mt-6"></div>
-<nav class="p-6 ">
+<nav class="p-6">
 <div class="flex justify-center">
   <div class="" id="menu">
     <ul class="md:flex flex-wrap gap-10">
